@@ -12,7 +12,7 @@
             <img src="/Images/Logo.jpg" style= "width:300px;" alt="Logo;"><br>
         </div>
         <div class="FORM">
-            <form>
+            <form id="ORDER">
                 <h1>Order Calc</h1>
                 <label for="Quntity">Qauntity:</label>
                 <input type="text" id="quantity" name="Quntity"><br><br>
@@ -34,8 +34,8 @@
             <label for="Total">Total:</label>
             <input type="text" id="total" name="Total" disabled>
             <br><br>
-            <button>Print Receipt</button>
-            <button>Add Another Order</button>
+            <button id="Receipt" type="Submit">Print Receipt</button>
+            <button id="AnotherOrder" type="button">Add Another Order</button>
         </div>
         <script src="/Restaurant-calc.js"></script>   
 </body>

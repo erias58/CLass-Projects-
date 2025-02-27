@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded',function(){
     
     //create the onclick function
         document.getElementById('calculate').addEventListener('click',function(){
-
                 //stop the form from reloading after the calculate button is clicked 
                 event.preventDefault();
                 //parseFloat the in[uted strings to integers(values).
@@ -30,13 +29,27 @@ document.addEventListener('DOMContentLoaded',function(){
                     totalAmount = subTotal+(subTotal*(Tip.value/100));
                     
                     //update the total in put
-                    Total.value = totalAmount.toFixed(2);
+                    Total.value = totalAmount.toFixed(0);
                     
                     
                     //display the calculated Amount
                     TotalDiv.classList.add('visible');
                 }
             
-            
+                //Receipt button.
+                document.getElementById('Receipt').addEventListener('click',function(){
+                alert('SORRY NO PRINTER CONNECTED');
+                });
+                
+                //New order button
+                document.getElementById('AnotherOrder').addEventListener('click',function(){
+                    //initialize the form id 
+                    const OrderForm = document.getElementById('ORDER');
+                    if(OrderForm){
+                        OrderForm.reset();
+                        TotalDiv.classList.remove('visible');
+                    }
+                    //document.getElementById('ORDER').reset();
+                });
         });
     });

@@ -90,7 +90,7 @@ visibility: visible;
 
 
 @media screen and (min-width: 718px) {
-.calculator .Total{
+.calculator, .Total{
     margin-top: 0px; /* Adjust as needed */
     margin-left:270PX; /*Adjust as needed */
     width: 700px; /* Fixed width for larger screens */
