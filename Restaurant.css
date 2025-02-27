@@ -65,7 +65,7 @@ label{
 
 .Total{
     /* Hidden by default */
-    visibility: hidden; 
+  visibility: hidden;
   /* Position it as a popup */
 position: fixed; 
 top: 50%;
@@ -79,18 +79,18 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Display the popup above other items in the page */
 z-index: 1000; 
 }
-.Total{
+/* .Total{
     visibility: hidden;
-}
+} */
 
 .Total.visible{
     /* show the popup */
-    visibility: visible;
+visibility: visible;
 }
 
 
 @media screen and (min-width: 718px) {
-.calculator{
+.calculator .Total{
     margin-top: 0px; /* Adjust as needed */
     margin-left:270PX; /*Adjust as needed */
     width: 700px; /* Fixed width for larger screens */

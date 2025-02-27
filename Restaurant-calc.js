@@ -6,16 +6,20 @@ document.addEventListener('DOMContentLoaded',function(){
     const Price = document.getElementById('price');
     const Tip = document.getElementById('tip');
     const Total = document.getElementById('total');
-    const totalDiv = document.querySelector('.Total');
+    const TotalDiv = document.querySelector('.Total');
     
-    //collect the inputs on click and parsefloat if necessary
+    //create the onclick function
         document.getElementById('calculate').addEventListener('click',function(){
+
+                //stop the form from reloading after the calculate button is clicked 
+                event.preventDefault();
+                //parseFloat the in[uted strings to integers(values).
             const QuantityValue = parseFloat(Quantity.value);
             const PriceValue = parseFloat(Price.value);
             const TipValue = parseFloat(Tip.value);
             
                 //check if the inputs are populated with numbers (integers).
-                if(isNaN(Quantity.value) || isNaN(Price.value) || isNaN(Tip.value)){
+                if(isNaN(QuantityValue) || isNaN(PriceValue) || isNaN(TipValue)){
                     alert("Please Enter Valid Order Details");
                 //check if the input boxes are not empty    
                 }else if(Quantity.value === ''|| Price.value === '' || Tip.value === ''){
@@ -26,13 +30,13 @@ document.addEventListener('DOMContentLoaded',function(){
                     totalAmount = subTotal+(subTotal*(Tip.value/100));
                     
                     //update the total in put
-                    Total.value = totalAmount.Fixed(2);
+                    Total.value = totalAmount.toFixed(2);
                     
                     
                     //display the calculated Amount
-                    totalDiv.classList.add('visible');
-                };
+                    TotalDiv.classList.add('visible');
+                }
             
             
         });
-});
+    });
