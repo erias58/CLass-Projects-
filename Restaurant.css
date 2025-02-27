@@ -1,0 +1,101 @@
+
+        body{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+    Verdana, sans-serif;
+    
+}
+.Logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+}
+
+/* table{
+
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 350px;
+    border: solid rgb(4, 1, 170);
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+} */
+input{
+    height: 40px;
+    width:300px ;
+    border: solid rgb(4, 1, 170);
+    border-radius: 5px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    height: 40px;
+    width:300px ;
+    border: solid rgb(4, 1, 170);
+    border-radius: 5px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+button{
+    background-color: lightblue;
+    border: solid rgb(4, 1, 170);
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin-left: 55px;
+    font-size: larger;
+    font-weight: bold;
+}
+label{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Total{
+    /* Hidden by default */
+    visibility: hidden; 
+  /* Position it as a popup */
+position: fixed; 
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Display the popup above other items in the page */
+z-index: 1000; 
+}
+.Total{
+    visibility: hidden;
+}
+
+.Total.visible{
+    /* show the popup */
+    visibility: visible;
+}
+
+
+@media screen and (min-width: 718px) {
+.calculator{
+    margin-top: 0px; /* Adjust as needed */
+    margin-left:270PX; /*Adjust as needed */
+    width: 700px; /* Fixed width for larger screens */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #D2B48C;
+            
+        }
+        .Logo{
+            background-image: url(/Images/Office-furniture.jpg);
+            height: 500px;
+            width: 100%;
+            color: Blue;
+            text-align: bottom;
+            font-size: 20px;
+            border: solid brown 5px;
+            border-radius: 10px;
+            }
+
+        .Intro{
+            margin-left: 300px;
+            margin-top: 120px;
+        }
+
+        .office, .hospital, .School{
+            /* background-image: url(/Images/office\ .jpg); */
+            /* border: solid brown; */
+            /* border-radius: 10px;
+            width:40%;
+            height: 400px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* @media screen and (max-width: 1919px) {
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            } */
+        }
+        .officeimage, .hospitalimage, .Schoolimage{
+           border: groove rgb(148, 42, 42) 5px;
+            width: 45%;
+            height: 200px;
+            border-radius: 10px;}
+                    
+            /* @media screen and (max-width: 1920px) {
+                width: 45%;
+                height: 200px;
+                border-radius: 10px;
+            } */
+            
+        
+        .officelist, .hospitallist, .Schoollist{
+            width:45%;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: rgb(187, 181, 181);
+            border:dotted  rgb(148, 42, 42) 5px;
+            color: blue;
+            font-size: 20px;
+            /* @media screen and (max-width: 1920px) {
+                width: 45%;
+                height: 200px;
+                border-radius: 10px;
+            }
+        } */
+        }
+
+      
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="Logo">
+        <div  class="Intro">
+            <h1>
+                ERI-FUNITURE
+            </h1>
+            <h3>
+                Welcome to <b>ERI-FUNITURE</b> the home of all your dream furnitures.
+            </h3>
+        </div>
+    </div><br><br>
+    <div class="office">
+        <div class="officeimage">
+            <img src="/Images/office .jpg" alt="Office Funiture" style="width: 100%; height:100%; object-fit: cover;">
+        </div>
+        <div class="officelist">
+            <ul>
+                <li>Office Chairs</li>
+                <li>Boardroom Tables</li>
+                <li>Boardroom Chairs</li>
+                <li>Executive desks</li>
+                <li>Meeting desks</li>
+                <li>Conference desks</li>
+            </ul>
+        </div>
+    </div><br><br>
+    <div class="hospital">
+        <div class="hospitalimage"">
+            <img src="Images/hospital.jpg" alt="Hospital Furniture" style="width:100%; height:100%; object-fit: cover;">
+        </div>
+        <div class="hospitallist">
+            <ul>
+                <li>Hospital Beds</li>
+                <li> Overbed Tables</li>
+                <li> Patient Chairs</li>
+                <li> Bedside Cabinets</li>
+                <li> Privacy Screens</li>
+                <li> IV Stands</li>
+            </ul>
+        </div>
+    </div><br><br>
+    <div class="School">
+        <div class="Schoolimage">
+            <img src="/Images/school.jpg" alt="School Furniture" style="width: 100%; height:100%; object-fit: cover;">
+        </div>
+        <div class="Schoollist">
+            <ul>
+                <li>Classroom Tables</li>
+                <li>Classroom Chairs</li>
+                <li>Storage Lockers</li>
+                <li>Portable Partitions</li>
+                <li>Mobile carts</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

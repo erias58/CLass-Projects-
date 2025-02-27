@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Restaurant.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="LOGO">
+            <img src="/Images/Logo.jpg" style= "width:300px;" alt="Logo;"><br>
+        </div>
+        <div class="FORM">
+            <form>
+                <h1>Order Calc</h1>
+                <label for="Quntity">Qauntity:</label>
+                <input type="text" id="quantity" name="Quntity"><br><br>
+                <label for="Price">Price:</label>
+                <input type="text" id="price" name="Price"><br><br>
+                <label for="Tip">Tip:</label>
+                <select id="tip" name="Tip">
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </select>
+                <br><br>
+                <button type="submit" id="calculate">Calculate</button>
+            </form>
+        </div>
+        </div>
+        <div class="Total">
+            <img src="/Images/Logo.jpg" style= "width:300px;" alt="Logo;"><br><br>
+            <label for="Total">Total:</label>
+            <input type="text" id="total" name="Total" disabled>
+            <br><br>
+            <button>Print Receipt</button>
+            <button>Add Another Order</button>
+        </div>
+        <script src="/Restaurant-calc.js"></script>   
+</body>
+
+</html>
