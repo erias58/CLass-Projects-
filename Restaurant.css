@@ -63,21 +63,19 @@ label{
     font-weight: bold;
 }
 
-.Total{
-    /* Hidden by default */
-  visibility: hidden;
-  /* Position it as a popup */
-position: fixed; 
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-color: white;
-padding: 20px;
-border: 1px solid #ccc;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Display the popup above other items in the page */
-z-index: 1000; 
+.Total {
+    width: 1000px;
+    height: 400px;
+    visibility:hidden;
+    position: fixed;
+    top: 15%; /* Center vertically */
+    left: -2%; /* Position 10% from the left */
+    background-color: white;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 /* .Total{
     visibility: hidden;
