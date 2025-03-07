@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded',function(){
                     
                     //display the calculated Amount
                     TotalDiv.classList.add('visible');
+                    // FORMDiv.classList.add('hidden');
                 }
             
                 //Receipt button.
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded',function(){
                     if(OrderForm){
                         OrderForm.reset();
                         TotalDiv.classList.remove('visible');
+                    
                     }
                     //document.getElementById('ORDER').reset();
                 });
