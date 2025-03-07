@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIME TABLE</title>
     <style>
+        /* table styling */
         table, th, td{
-            border: solid;}
+            border:groove skyblue;
+            text-align: center;
+        }
+        /* lunch styling */
+        .lunch{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            white-space:nowrap;
+        }
     </style>
 </head>
 <body>
     <table>
             <tr>
-                <td>
+                <td colspan="6">
                     <h3>CLASS TIME TABLE</h3>
                 </td>
             </tr>
@@ -26,7 +35,7 @@
             <td>
                 <h4>PERIOD</h4>
             </td>
-            <td>
+            <td rowspan="6" class="lunch">
                 <h4>LUNCH</h4>
             </td>
             <td>
@@ -47,9 +56,6 @@
                 SCIENCE
             </td>
             <td>
-                LUNCH
-            </td>
-            <td>
                 ENGLISH
             </td>
             <td>
@@ -65,9 +71,6 @@
             </td>
             <td>
                 FINE ART
-            </td>
-            <td>
-                LUNCH
             </td>
             <td>
                 MUSIC
@@ -87,9 +90,6 @@
                 PHYSICS
             </td>
             <td>
-                LUNCH
-            </td>
-            <td>
                 BIOLOGY
             </td>
             <td>
@@ -107,9 +107,6 @@
                 STATISTCS
             </td>
             <td>
-                LUNCH
-            </td>
-            <td>
                 COMMERCE
             </td>
             <td>
@@ -125,9 +122,6 @@
             </td>
             <td>
                 LITERATURE
-            </td>
-            <td>
-                LUNCH
             </td>
             <td>
                 DRAMA
