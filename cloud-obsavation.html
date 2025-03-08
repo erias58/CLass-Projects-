@@ -4,65 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloudobservation</title>
+    <style>
+        /* form element style */
+        .form{
+            border: solid black;
+            background-color: rgb(129, 185, 231);
+            
+        }
+
+        .High, .Middle, .Low{
+            border-bottom: solid black;
+            
+        }
+
+        .High, .Middle, .Low, .Rain-Producing{
+            display: flex;
+            align-items: center;
+            gap:20px;
+            margin-left: 10px;
+            margin-right: 100px;
+        }
+        
+    </style>
 </head>
 <body>
-    <form action="Submit">
-        <h2>
-            Could Observation
-        </h2>
-        <h4>Cloud Observation (Select As Many types as Obsaved)</h4>
-        <div class="High">
-            <h5>High</h5>
-            <div>
-                <input type="checkbox" checked>
-                <label for="Cirrus">Cirrus</label>
+    <div class="form">
+        <form action="Submit">
+            <h2>
+                Could Observation
+            </h2>
+            <h4>Cloud Observation (Select As Many types as Obsaved)</h4>
+            <div class="High">
+                <h5>High</h5>
+                <div>
+                    <input type="checkbox" checked>
+                    <label for="Cirrus">Cirrus</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="Cirrocumlus">Cirrocumlus</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked>
+                    <label for="Cirrostratus">Cirrostratus</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox">
-                <label for="Cirrocumlus">Cirrocumlus</label>
+            <div class="Middle">
+                <h5>Middle</h5>
+                <div>
+                    <input type="checkbox">
+                    <label for="Altostratus">Altostratus</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked>
+                    <label for="Altocumulus">Altocumulus</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" checked>
-                <label for="Cirrostratus">Cirrostratus</label>
+            <div class="Low">
+                <h5>Low</h5>
+                <div>
+                    <input type="checkbox">
+                    <label for="Stratus">Stratus</label>
+                </div>
+                <div>
+                    <input type="checkbox"checked>
+                    <label for="Stratoscumulus">Stratoscumulus</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked>
+                    <label for="Cumulus">Cumulus</label>
+                </div>
             </div>
-        </div>
-        <div class="Middle">
-            <h5>Middle</h5>
-            <div>
-                <input type="checkbox">
-                <label for="Altostratus">Altostratus</label>
+            <div class="Rain-Producing">
+                <h5>Rain-Producing</h5>
+                <div>
+                    <input type="checkbox">
+                    <label for="Nimbustratus">Nimbustratus</label>
+                </div>
+                <div>
+                    <input type="checkbox"checked>
+                    <label for="Cumulonimbus">Cumulonimbus</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" checked>
-                <label for="Altocumulus">Altocumulus</label>
-            </div>
-        </div>
-        <div class="Low">
-            <h5>Low</h5>
-            <div>
-                <input type="checkbox">
-                <label for="Stratus">Stratus</label>
-            </div>
-            <div>
-                <input type="checkbox"checked>
-                <label> for="Stratoscumulus">Stratoscumulus</label>
-            </div>
-            <div>
-                <input type="checkbox" checked>
-                <label for="Cumulus">Cumulus</label>
-            </div>
-        </div>
-        <div>
-            <h5>Rain-Producing</h5>
-            <div>
-                <input type="checkbox">
-                <label for="Nimbustratus">Nimbustratus</label>
-            </div>
-            <div>
-                <input type="checkbox"checked>
-                <label for="Cumulonimbus">Cumulonimbus</label>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
